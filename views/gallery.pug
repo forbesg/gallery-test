@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .content
+    p Gallery Template
+    .container
+      .columns
+        each image in images
+          .card.col-4.col-md-6.col-sm-12
+            .card-image
+              img(src=`${image}` style="width: 100%")
+            .card-header
+              h4.card-title Image Title

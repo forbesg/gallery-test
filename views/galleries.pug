@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .content
+    p My Block Content for the Galleries page
+    each directory in galleries
+      h4= directory
+      a(href=`/galleries/${directory}`) View
